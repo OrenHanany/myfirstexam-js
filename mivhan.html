@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mivhan.css" />
+    <script src="mivhan.js"></script>
+    <title>עגלת קניות</title>
+  </head>
+  <body>
+    <center>
+      <h1>עגלת קניות</h1>
+      <hr />
+      <input
+        type="text"
+        id="pName"
+        placeholder="Enter product name"
+      /><br /><br />
+      <input
+        type="number"
+        id="pPrice"
+        placeholder="Enter product price"
+      /><br /><br />
+      <select id="cat">
+        <option value="Drinks">Drinks</option>
+        <option value="Meat">Meat</option>
+        <option value="Dairy">Dairy</option>
+        <option value="Snacks">Snacks</option>
+        <option value="Basic">Basic</option>
+      </select>
+      <br /><br />
+      <input type="url" id="pLink" placeholder="Enter Link" /><br /><br />
+      <input type="button" value="הוסף מטלה" onclick="addTask()" />
+      <br />
+      <hr />
+      <table id="superTable"></table>
+      <br /><br />
+      <input type="button" value="מחק את האחרון" onclick="deleteLast()" />
+    </center>
+  </body>
+</html>
